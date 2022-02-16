@@ -71,6 +71,7 @@ enum Colors {
 }
 console.log(Colors.color1);
 
+
 // Generics
 function _concat<T>(a: T, b: T): T {
   return b;
