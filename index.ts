@@ -63,3 +63,16 @@ const anonymousPerson: Person = {
   hobby: "",
 };
 
+// Enums
+enum Colors {
+  color1 = "red",
+  color2 = "blue",
+  color3 = "green",
+}
+console.log(Colors.color1);
+
+// Generics
+function _concat<T>(a: T, b: T): T {
+  return b;
+}
+console.log(_concat<number>(5, 2));

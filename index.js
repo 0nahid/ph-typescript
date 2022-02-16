@@ -33,3 +33,16 @@ var anonymousPerson = {
     age: 0,
     hobby: ""
 };
+// Enums
+var Colors;
+(function (Colors) {
+    Colors["color1"] = "red";
+    Colors["color2"] = "blue";
+    Colors["color3"] = "green";
+})(Colors || (Colors = {}));
+console.log(Colors.color1);
+// Generics
+function _concat(a, b) {
+    return b;
+}
+console.log(_concat(5, 2));
