@@ -8,3 +8,8 @@ const arr4: Array<string> = ["a", "b", "c"];
 type numOrStrOrBol = number | string | boolean;
 const id: numOrStrOrBol = true;
 
+// Basic function
+function getLowerCase(str: string): string {
+  return str.toLowerCase();
+}
+
