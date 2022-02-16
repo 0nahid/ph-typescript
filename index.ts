@@ -13,3 +13,6 @@ function getLowerCase(str: string): string {
   return str.toLowerCase();
 }
 
+// Arrow function
+const addNumber = (a: number, b: number): number => a + b;
+

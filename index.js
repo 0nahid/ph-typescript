@@ -8,3 +8,5 @@ var id = true;
 function getLowerCase(str) {
     return str.toLowerCase();
 }
+// Arrow function
+var addNumber = function (a, b) { return a + b; };
