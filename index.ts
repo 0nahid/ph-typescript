@@ -16,3 +16,50 @@ function getLowerCase(str: string): string {
 // Arrow function
 const addNumber = (a: number, b: number): number => a + b;
 
+// Interface
+interface User {
+  name: string;
+  id: number;
+}
+
+class UserAccount {
+  name: string;
+  id: number;
+
+  constructor(name: string, id: number) {
+    this.name = name;
+    this.id = id;
+  }
+}
+
+const user: User = new UserAccount("Murphy", 1);
+
+interface Point {
+  x: number;
+  y: number;
+}
+
+function logPoint(p: Point) {
+  console.log(`${p.x}, ${p.y}`);
+}
+// logs "12, 26"
+const point = { x: 12, y: 26 };
+// logPoint(point);
+
+interface Person {
+  name: string;
+  age: number;
+  hobby?: string | null;
+}
+const person: Person = {
+  name: "Murphy",
+  age: 25,
+  hobby: "Coding",
+};
+
+const anonymousPerson: Person = {
+  name: "",
+  age: 0,
+  hobby: "",
+};
+

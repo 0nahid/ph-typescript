@@ -10,3 +10,26 @@ function getLowerCase(str) {
 }
 // Arrow function
 var addNumber = function (a, b) { return a + b; };
+var UserAccount = /** @class */ (function () {
+    function UserAccount(name, id) {
+        this.name = name;
+        this.id = id;
+    }
+    return UserAccount;
+}());
+var user = new UserAccount("Murphy", 1);
+function logPoint(p) {
+    console.log("".concat(p.x, ", ").concat(p.y));
+}
+// logs "12, 26"
+var point = { x: 12, y: 26 };
+var person = {
+    name: "Murphy",
+    age: 25,
+    hobby: "Coding"
+};
+var anonymousPerson = {
+    name: "",
+    age: 0,
+    hobby: ""
+};
